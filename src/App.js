@@ -5,6 +5,7 @@ import './App.css'
 import Home from './components/home/Home';
 
 import useBreakpoint from 'use-breakpoint';
+import Works from './components/works/Works';
 
 const BREAKPOINTS = { mobile: 0, tablet: 768, desktop: 769 }
 
@@ -17,6 +18,7 @@ function App() {
       <main>
         <Home breakpoint={breakpoint}/>
         <div className="divider"/>
+        <Works breakpoint={breakpoint}/>
       </main>
     </div>
   );
