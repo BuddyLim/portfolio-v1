@@ -9,6 +9,7 @@ import listOfWorks from './components/works/works.json'
 import useBreakpoint from 'use-breakpoint';
 import Works from './components/works/Works';
 import About from './components/about/About';
+import Footer from './components/footer/Footer';
 
 const BREAKPOINTS = { mobile: 0, tablet: 768, desktop: 769 }
 
@@ -33,6 +34,7 @@ function App() {
         <About/>
         <div className="divider"/>
       </main>
+      <Footer breakpoint={breakpoint}/>
     </div>
   );
 }

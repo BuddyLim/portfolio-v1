@@ -4,7 +4,7 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 
-main{
+main, footer{
 	padding: 0 10%;
 }
 
@@ -16,14 +16,14 @@ main{
 
 
 @media only screen and (max-width: 1024px) {
-  main {
+  main, footer {
 		padding: 5%;
     margin: 5% 0;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  main {
+  main, footer {
 		padding: 0px;
     margin: 20% 0;
   }
