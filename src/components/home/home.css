@@ -1,0 +1,42 @@
+.home{
+  margin-top: 10%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1280px) {
+  .home{
+	  margin-top: 7%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home{
+	  margin-top: 7%;
+    flex-direction: column-reverse;
+  }
+
+  .home__title{
+    margin-top: 40px;
+  }
+}
+
+.home__title{
+  display: flex;
+  flex-direction: column;
+}
+
+.home__greeting{
+  color: #F3B234;
+  font-size: 64px;
+}
+
+.home__introduction{
+  margin-top: 20px;
+  color: #444444;
+  font-size: 36px;
+  white-space: pre-line;
+}
