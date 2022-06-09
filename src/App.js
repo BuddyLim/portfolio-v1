@@ -4,6 +4,8 @@ import './reset.css'
 import './App.css'
 import Home from './components/home/Home';
 
+import listOfWorks from './components/works/works.json'
+
 import useBreakpoint from 'use-breakpoint';
 import Works from './components/works/Works';
 
@@ -18,7 +20,15 @@ function App() {
       <main>
         <Home breakpoint={breakpoint}/>
         <div className="divider"/>
-        <Works breakpoint={breakpoint}/>
+        {listOfWorks.map(worksObj =>{
+          const { title } = worksObj
+          return (
+            <div key={title}>
+              <Works key={title} worksObj={worksObj} breakpoint={breakpoint}/>
+              <div className="divider"/>
+            </div>
+          )
+        })}
       </main>
     </div>
   );

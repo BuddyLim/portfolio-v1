@@ -11,15 +11,20 @@ main{
 .divider{
   width: 100%;
   border: 1px solid #4444;
-  margin: 64px 0;
+  margin: 17% 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  main {
+		padding: 5%;
+    margin: 5% 0;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   main {
 		padding: 0px;
-  }
-
-  .divider{
-    margin: 48px 0;
+    margin: 20% 0;
   }
 }
