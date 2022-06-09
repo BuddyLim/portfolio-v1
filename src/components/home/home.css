@@ -13,6 +13,12 @@
   }
 }
 
+@media only screen and (max-width: 870px) {
+  .home{
+    gap: 5%
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .home{
 	  margin-top: 7%;
@@ -37,6 +43,6 @@
 .home__introduction{
   margin-top: 20px;
   color: #444444;
-  font-size: 36px;
+  font-size: 48px;
   white-space: pre-line;
 }
