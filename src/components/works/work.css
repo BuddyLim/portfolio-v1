@@ -68,6 +68,12 @@
   }
 }
 
+@media only screen and (max-width: 425px) {
+  .work{
+    padding: 0%;
+  }
+}
+
 @media only screen and (max-width: 375px) {
   .work__title{
     font-size: 30px;
@@ -75,12 +81,5 @@
 
   .work__subtitle, .work__information, .work__description{
     font-size: 16px;
-  }
-}
-
-
-@media only screen and (max-width: 425px) {
-  .work{
-    padding: 0%;
   }
 }
