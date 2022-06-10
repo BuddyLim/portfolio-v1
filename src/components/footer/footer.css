@@ -20,6 +20,7 @@
 .footer-section__links{
   cursor: pointer;
   transition: 0.3s;
+  user-select: none;
 }
 
 .footer-section__links:hover{
