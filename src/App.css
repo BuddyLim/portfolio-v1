@@ -28,3 +28,9 @@ main, footer{
     margin: 20% 0;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  main{
+    margin: 30% 0;
+  }
+}
