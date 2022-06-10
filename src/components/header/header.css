@@ -1,4 +1,7 @@
 .header{
+  position: sticky;
+  top: 0;
+  background: white;
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -7,12 +10,6 @@
   font-weight: bold;
   color: #444444;
   padding: 20px 60px;
-}
-
-@media only screen and (max-width: 1280px) {
-  .header{
-    padding: 20px 25px;
-  }
 }
 
 .header__logo{
@@ -29,12 +26,39 @@
   align-items: baseline;
 }
 
-.header__menu__item{
+.header__item{
   cursor: pointer;
   transition: 0.3s;
 }
 
-.header__menu__item:hover{
-  color: #F3B234;
+.header__item:hover{
+  color: #5391f8;
   transition: 0.3s;
+}
+
+.header__close{
+  padding: 20px 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 1280px) {
+  .header{
+    padding: 20px 25px;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .header__menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+  }
+
+  .header__item{
+    font-size: 32px;
+  }
 }
