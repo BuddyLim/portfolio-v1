@@ -1,5 +1,7 @@
 .header{
-  position: sticky;
+  position: fixed;
+  width: -webkit-fill-available;
+  width: -moz-available;
   top: 0;
   background: white;
   display: flex;
@@ -29,6 +31,7 @@
 .header__item{
   cursor: pointer;
   transition: 0.3s;
+  user-select: none;
 }
 
 .header__item:hover{

@@ -75,7 +75,7 @@ const DesktopMenu = ({ menuProps }) =>{
     <div className="header__menu">
       {listOfMenuItems.map(menuItemObj =>{
         const { title, path } = menuItemObj
-        return <span key={title} onClick={()=> handleOnClick(path)} className="header__menu__item">{title}</span>
+        return <span key={title} onClick={()=> handleOnClick(path)} className="header__item">{title}</span>
       })}
     </div>
   )
