@@ -54,7 +54,7 @@ const DesktopMenu = () =>{
     <div className="header__menu">
       {listOfMenuItems.map(menuItemObj =>{
         const { title, path } = menuItemObj
-        return <span className="header__menu__item">{title}</span>
+        return <span key={title} className="header__menu__item">{title}</span>
       })}
     </div>
   )

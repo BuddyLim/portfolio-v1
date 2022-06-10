@@ -18,10 +18,12 @@
 
 .footer-section__links{
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.footer__resume{
-  cursor: pointer;
+.footer-section__links:hover{
+  color: #5391f8;
+  transition: 0.3s;
 }
 
 

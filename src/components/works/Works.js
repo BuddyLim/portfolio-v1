@@ -2,7 +2,7 @@ import React from "react";
 import '../../base.css'
 import './work.css'
 
-export default function Works({ worksObj }){
+export default function Works({ breakpoint, worksObj }){
   const { title, subtitle, description, imgSrc, infoPath } = worksObj
   return(
     <div className="base-section">
@@ -17,7 +17,13 @@ export default function Works({ worksObj }){
             <p className="work__information">More Information -&gt;</p>
           </div>
         </div>
-        <img className="work__image" src={`${process.env.PUBLIC_URL}/works/${imgSrc}`}/>
+        <img 
+          className="work__image" 
+          src={`${process.env.PUBLIC_URL}/works/${imgSrc}`}
+          alt={`${title}-work-image`}
+          width="100%"
+          height="100%"
+        />
       </div>
     </div>
   )

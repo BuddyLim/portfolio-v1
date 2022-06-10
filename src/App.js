@@ -31,7 +31,7 @@ function App() {
             </div>
           )
         })}
-        <About/>
+        <About breakpoint={breakpoint}/>
         <div className="divider"/>
       </main>
       <Footer breakpoint={breakpoint}/>
