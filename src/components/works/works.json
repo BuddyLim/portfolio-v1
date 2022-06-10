@@ -3,21 +3,21 @@
     "title":"Mywheels",
     "subtitle":"//AUTOMOTIVE NEWS WEBSITE",
     "description":"We delievered a brand new platform for Chinapress to curate automotive news for their audiences.",
-    "imgSrc":"mywheels.png",
+    "imgSrc":"mywheels.webp",
     "infoPath":"myhweels"
   },
   {
     "title":"PixiPixi",
     "subtitle":"//POC CRYPTO MARKETPLACE",
     "description":"We wanted to explore the new and emerging crypto world by giving users ownership of the Pixels they place.",
-    "imgSrc":"pixipixi.png",
+    "imgSrc":"pixipixi.webp",
     "infoPath":"pixipixi"
   },
   {
     "title":"Jamit!",
     "subtitle":"//POC GAMIFICATION PLATFORM",
     "description":"We wanted to explore the potential of web based card storytelling through the use of gamification.",
-    "imgSrc":"jamit.png",
+    "imgSrc":"jamit.webp",
     "infoPath":"jamit"
   }
 ]
