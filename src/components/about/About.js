@@ -6,7 +6,7 @@ import './about.css'
 
 export default function About({ breakpoint }){
   return(
-    <div className="base-section">
+    <div id="about" className="base-section">
       <div className="about">
         <div className="about__heading">
           <p className="about__title">{"I’m Buddy Lim,\na web developer based in Kuala Lumpur"}</p>

@@ -8,7 +8,7 @@ export default function Footer({ breakpoint }){
 
   return(
     <footer>
-      <div className="base-section">
+      <div id="contact" className="base-section">
         <div className="footer-section">
           <span className="footer-section__contact">Contact</span>
           <div className="footer-section__items">
