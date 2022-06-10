@@ -1,5 +1,5 @@
 .home{
-  margin-top: 10%;
+  margin-top: 15%;
   font-weight: bold;
   display: flex;
   flex-direction: row;
@@ -7,9 +7,9 @@
   align-items: center;
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1024px) {
   .home{
-	  margin-top: 7%;
+	  margin-top: 10%;
   }
 }
 
@@ -21,7 +21,7 @@
 
 @media only screen and (max-width: 768px) {
   .home{
-	  margin-top: 7%;
+	  margin-top: 5%;
     flex-direction: column-reverse;
   }
 

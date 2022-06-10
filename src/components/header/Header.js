@@ -31,7 +31,10 @@ export default function Header({ breakpoint }){
 
   const handleOnClick = (path) =>{
     const element = document.getElementById(path);
-    element.scrollIntoView({ behavior:"smooth", block:"center" });
+    const isMobileOrTablet = ["tablet", "mobile"].includes(breakpoint)
+    const isAbout = path === "about"
+    const block = isMobileOrTablet && isAbout ? "start" : "center"
+    element.scrollIntoView({ behavior:"smooth", block:block });
   }
 
   const menuProps = {

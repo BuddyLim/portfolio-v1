@@ -54,6 +54,9 @@ dt:nth-of-type(2){
 }
 
 @media only screen and (max-width: 768px) {
+  #about{
+    scroll-margin-top: 100px;
+  }
   .about{
     flex-direction: column;
     padding: 0 10%;
