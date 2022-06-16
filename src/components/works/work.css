@@ -39,8 +39,14 @@
   color: #444444;
   font-weight: bold;
   font-size: 20px;
+  user-select: none;
+  transition: 0.3s;
+  cursor: pointer;
 }
-
+.work__information:hover{
+  color: #5391f8;
+  transition: 0.3s;
+}
 .work__image{
   margin-top: 50px;
   object-fit: contain;
