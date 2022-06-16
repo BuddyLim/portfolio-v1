@@ -102,8 +102,8 @@ const MobileMenu = ({ menuProps }) =>{
         style={{ width: "100%" }}
         duration={200}
       >
-        <div className="header__close" onClick={handleDrawerClick}>
-          <CloseIcon/>
+        <div className="header__close">
+          <CloseIcon onClick={handleDrawerClick}/>
         </div>
         <div className="header__menu">
           {listOfMenuItems.map(menuItemObj =>{
