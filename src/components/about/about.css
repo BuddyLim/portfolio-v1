@@ -13,7 +13,7 @@
   width:35%;
   display: flex;
   flex-direction: column;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .about__list-title{
@@ -28,7 +28,7 @@
 
 .about__description{
   margin-top: 30px;
-  font-size: 22px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   gap: 30px;
