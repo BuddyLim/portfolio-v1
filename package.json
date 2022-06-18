@@ -5,11 +5,13 @@
   "engines": {
     "node": "16.14.2"
   },
-  "homepage": "https://buddylim.github.io/portfolio/",
+
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "flubber": "^0.4.2",
+    "framer-motion": "^6.3.11",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-modern-drawer": "^1.1.1",

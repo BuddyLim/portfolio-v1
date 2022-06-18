@@ -2,13 +2,21 @@ import React from "react";
 import '../../base.css'
 import { handleLinkClick } from "../../utils/openLink";
 import './work.css'
+import { m } from 'framer-motion/dist/framer-motion'
+import FlubberIcon from "../flubber/FlubberIcon";
 
 export default function Works({ breakpoint, worksObj }){
-  const { title, subtitle, description, imgSrc, url } = worksObj
+  const { title, subtitle, description, imgSrc, url, colors, paths, duration } = worksObj
   return(
     <div id="works" className="base-section">
+      {/* <FlubberIcon width={29} height={29} paths={paths} colors={colors} duration={duration} />  */}
       <div className="work">
-        <div className="work__content">
+        <m.div 
+          className="work__content"
+          initial={{ opacity: 0, y: 100 }}
+          whileInView={{ opacity: 1, y: 0, }}
+          viewport={{ once: true }}
+        >
           <div className="work__heading">
             <p className="work__title">{title}</p>
             <p className="work__subtitle">{subtitle}</p>
@@ -19,11 +27,11 @@ export default function Works({ breakpoint, worksObj }){
               <p className="work__information" onClick={() => handleLinkClick(url, breakpoint)}>Visit website -&gt;</p>
             }
           </div>
-        </div>
+        </m.div>
         <img 
           className="work__image" 
           src={`${process.env.PUBLIC_URL}/works/${imgSrc}`}
-          alt={`${title}-work-image`}
+          alt={`${title}-work`}
           width="100%"
           height="100%"
         />
