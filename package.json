@@ -5,7 +5,7 @@
   "engines": {
     "node": "16.14.2"
   },
-
+  "homepage": "https://buddylim.github.io/portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
