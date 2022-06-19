@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { ReactComponent as HamburgerIcon } from './hamburgerIcon.svg';
+import { ReactComponent as HeaderIcon } from './headerIcon.svg';
 import { ReactComponent as CloseIcon } from './closeIcon.svg';
 import Drawer from 'react-modern-drawer'
 
 import "./header.css"
 import 'react-modern-drawer/dist/index.css'
-import FlubberIcon from '../flubber/FlubberIcon';
+// import FlubberIcon from '../flubber/FlubberIcon';
 
-import { m, motion } from 'framer-motion/dist/framer-motion'
+import { m } from 'framer-motion/dist/framer-motion'
 
 
 const listOfMenuItems = [
@@ -29,25 +30,25 @@ const listOfMenuItems = [
   }
 ]
 
-const headerIconProps = {
-  paths:[
-    "M9.99991 0L20 17H0L9.99991 0Z",
-    "M0 0H17V17H0V0Z",
-    "M17 8.5C17 13.1944 13.1944 17 8.5 17C3.80558 17 0 13.1944 0 8.5C0 3.80558 3.80558 0 8.5 0C13.1944 0 17 3.80558 17 8.5Z",
-    "M0 0H17V17H0V0Z",
-    "M9.99991 0L20 17H0L9.99991 0Z",
-  ],
-  colors:[
-    "#31CF24",
-    "#56ABF9",
-    "#F3B234",
-    "#F96056",
-    "#31CF24",
-  ],
-  width: 20,
-  height: 20,
-  duration: 0.5
-}
+// const headerIconProps = {
+//   paths:[
+//     "M9.99991 0L20 17H0L9.99991 0Z",
+//     "M0 0H17V17H0V0Z",
+//     "M17 8.5C17 13.1944 13.1944 17 8.5 17C3.80558 17 0 13.1944 0 8.5C0 3.80558 3.80558 0 8.5 0C13.1944 0 17 3.80558 17 8.5Z",
+//     "M0 0H17V17H0V0Z",
+//     "M9.99991 0L20 17H0L9.99991 0Z",
+//   ],
+//   colors:[
+//     "#31CF24",
+//     "#56ABF9",
+//     "#F3B234",
+//     "#F96056",
+//     "#31CF24",
+//   ],
+//   width: 20,
+//   height: 20,
+//   duration: 0.5
+// }
 
 export default function Header({ breakpoint }){
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -75,20 +76,16 @@ export default function Header({ breakpoint }){
   return(
     <header className="header">
       <div className="header__logo" onClick={handleHeaderClick}>
-        <FlubberIcon 
+        {/* <FlubberIcon 
           {...headerIconProps}
-          headerIconProps={{
-            isClicked: isClicked, 
-            setIsClicked: setIsClicked
-          }}
-        />
-        {/* <HeaderIcon/> */}
-        <motion.div
+        /> */}
+        <HeaderIcon/>
+        <m.div
           whileHover={{ scale: 1.2 }}    
           whileTap={{  scale: 0.8, }}
         >
           Buddy Lim
-        </motion.div>
+        </m.div>
       </div>
       
       <CommonMenu menuProps={menuProps}/>
