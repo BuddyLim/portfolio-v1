@@ -14,7 +14,7 @@ export default function Works({ breakpoint, worksObj }){
         <m.div 
           className="work__content"
           initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0, }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
           <div className="work__heading">

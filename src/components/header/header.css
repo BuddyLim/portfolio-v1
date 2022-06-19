@@ -12,6 +12,7 @@
   font-weight: bold;
   color: #444444;
   padding: 20px 60px;
+  z-index: 5;
 }
 
 .header__logo{
