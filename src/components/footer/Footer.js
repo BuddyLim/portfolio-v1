@@ -15,7 +15,7 @@ export default function Footer({ breakpoint }){
             <span className="footer-section__links" onClick={() =>handleLinkClick("https://github.com/BuddyLim", breakpoint)}>Github</span>
             <span className="footer-section__links" onClick={() =>handleLinkClick("https://www.linkedin.com/in/buddy-lim/", breakpoint)}>LinkedIn</span>
             <span className="footer-section__links" onClick={() =>handleLinkClick("mailto:buddy.tlimk@gmail.com", breakpoint)}>Email</span>
-            <span className="footer-section__links" onClick={() =>handleLinkClick(`${process.env.PUBLIC_URL}/Lim Kuang Tar Resume.pdf`, breakpoint)} className="footer-section__links">Resume</span>
+            <span className="footer-section__links" onClick={() =>handleLinkClick(`${process.env.PUBLIC_URL}/Lim Kuang Tar Resume.pdf`, breakpoint)}>Resume</span>
           </div>
         </div>
       </div>
