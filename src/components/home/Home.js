@@ -29,7 +29,7 @@ export default function Home() {
           Hello!
         </m.span>
         {/* <span className="home__greeting">Hello!</span> */}
-        <m.span className="home__introduction" {...animateProps}>{"I'm Buddy Lim,\na web developer"}</m.span>
+        <m.span className="home__introduction" {...animateProps}>{"I'm Lim Kuang Tar,\na web developer"}</m.span>
       </div>
       <div>
         <HomeIcon/>
