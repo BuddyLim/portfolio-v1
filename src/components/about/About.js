@@ -15,7 +15,7 @@ export default function About({ breakpoint }){
             <p>I dabble also with Langchain, LlAMAcpp and LLMs for some POCs</p>
           </div>
         </div>
-        <dl className="about__list">
+        {/* <dl className="about__list">
           <dt className="about__list-title">My hobbies</dt>
           <dd>Experimenting with new tech</dd>
           <dd className="about__parkour" onClick={() =>{handleLinkClick("https://www.instagram.com/its_thatbuddy/", breakpoint)}}>Parkour</dd>
@@ -25,7 +25,7 @@ export default function About({ breakpoint }){
           <dd>Scalable front-end architecture</dd>
           <dd>E2E Browser Testing</dd>
           <dd>Responsive layouts</dd>
-        </dl>
+        </dl> */}
       </div>
     </div>
   )
