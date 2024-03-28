@@ -18,7 +18,7 @@ const listOfMenuItems = [
   },
   {
     path: 'works',
-    title: "Works"
+    title: "Public Works"
   },
   {
     path: 'about',
@@ -84,7 +84,7 @@ export default function Header({ breakpoint }){
           whileHover={{ scale: 1.2 }}    
           whileTap={{  scale: 0.8, }}
         >
-          Buddy Lim
+          Lim Kuang Tar
         </m.div>
       </div>
       
