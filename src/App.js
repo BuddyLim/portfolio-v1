@@ -24,6 +24,7 @@ function App() {
         <Header breakpoint={breakpoint}/>
         <main>
           <Home breakpoint={breakpoint}/>
+          <About breakpoint={breakpoint}/>
           <div className="divider"/>
           {listOfWorks.map(worksObj =>{
             const { title } = worksObj
@@ -34,8 +35,6 @@ function App() {
               </div>
             )
           })}
-          <About breakpoint={breakpoint}/>
-          <div className="divider"/>
         </main>
         <Footer breakpoint={breakpoint}/>
       </div>
