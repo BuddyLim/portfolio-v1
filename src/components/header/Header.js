@@ -17,12 +17,12 @@ const listOfMenuItems = [
     title: "Home"
   },
   {
-    path: 'works',
-    title: "Public Works"
-  },
-  {
     path: 'about',
     title: "About"
+  },
+  {
+    path: 'works',
+    title: "Public Works"
   },
   {
     path: 'contact',
